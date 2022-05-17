@@ -1,3 +1,4 @@
+@use "./scss/variables" as var;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
@@ -6,7 +7,28 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  // background: var.$primary-beige;
+}
+
 a {
   text-decoration: none;
   color: initial;
+  font-style: initial;
+
+  &:visited {
+    color: initial;
+    text-decoration: none;
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: initial;
+
+  &:visited {
+    color: initial;
+    text-decoration: none;
+  }
 }
