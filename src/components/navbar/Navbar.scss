@@ -1,0 +1,33 @@
+@use "../../scss/variables" as var;
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+.Navbar {
+  border-bottom: 2px solid rgb(231, 219, 219);
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  background: var.$primary-pink;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-nav {
+      a {
+        margin-left: 7px;
+      }
+    }
+  }
+
+  .Navbar-Logo {
+    font-family: "Alex Brush", cursive;
+    font-weight: bolder;
+    font-size: 45px;
+  }
+
+  @media (max-width: 850px) {
+    // display hamburger
+  }
+}
