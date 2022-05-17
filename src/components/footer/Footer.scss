@@ -1,0 +1,60 @@
+@use "../../scss/variables" as var;
+
+// footer tag in App component
+footer {
+  // position: absolute;
+  // bottom: 0;
+}
+
+// Footer component
+.Footer {
+  border-top: 2px solid rgb(231, 219, 219);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: 330px;
+  padding: 50px 0;
+  background-color: var.$primary-pink;
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+
+    h4 {
+      letter-spacing: 1px;
+    }
+
+    * {
+      margin: 5px 0;
+      font-size: 15px;
+
+      &:hover:not(h4, p) {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .Footer-socials {
+    margin-left: 150px;
+
+    .container {
+      display: flex;
+      margin: 0;
+
+      a {
+        height: 40px;
+        width: 40px;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 850px) {
+    // make desponsive
+    flex-direction: column;
+  }
+}
