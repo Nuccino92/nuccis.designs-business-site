@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  transition: 0.6s ease;
 }
 
 body {
@@ -31,4 +32,10 @@ a:-webkit-any-link {
     color: initial;
     text-decoration: none;
   }
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
 }
