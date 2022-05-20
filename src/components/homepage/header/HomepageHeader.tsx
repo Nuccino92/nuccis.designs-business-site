@@ -6,7 +6,7 @@ const HomepageHeader = () => {
   return (
     <Container className="HomepageHeader">
       <Container>
-        <h1>Nuccis Designs</h1>
+        <h1>nuccis designs</h1>
         <p>Custom designed products that are made for you. </p>
         <Link to="/services">Services</Link>
       </Container>

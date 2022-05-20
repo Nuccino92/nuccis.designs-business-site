@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         <BoostrapNavbar className="Navbar">
           <Container>
             <Link to="/" className="Navbar-Logo">
-              Nuccis Designs
+              nuccis designs
             </Link>
             <Nav>
               <Link to="/services">SERVICES</Link>
@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
               to="/"
               className="Navbar-Logo"
             >
-              Nuccis Designs
+              nuccis designs
             </Link>
           </Container>
           <button
