@@ -1,15 +1,88 @@
 @use "../../../scss/variables" as var;
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
 .HomepageHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0;
+  padding: 240px 0;
   overflow: hidden;
   position: relative;
   color: rgb(235, 219, 130);
 
+  @media (max-width: 450px) {
+    padding: 120px 0;
+  }
+
+  .container {
+    padding: 20px;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+
+    h1 {
+      font-family: var.$Alex-Brush;
+      font-size: 110px;
+      font-weight: bolder;
+      padding-bottom: 30px;
+
+      @media (max-width: 700px) {
+        font-size: 77px;
+        padding-bottom: 6px;
+      }
+
+      @media (max-width: 460px) {
+        font-size: 55px;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 40px;
+      }
+    }
+
+    p {
+      width: 90%;
+      font-size: 32px;
+      line-height: 33px;
+      font-weight: 900;
+      margin-bottom: 60px;
+
+      @media (max-width: 750px) {
+        font-size: 27px;
+        width: 500px;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 20px;
+        width: 80%;
+      }
+
+      @media (max-width: 360px) {
+        width: 100%;
+      }
+    }
+
+    a {
+      width: max-content;
+      border-radius: 50px;
+      background-color: var.$primary-pink;
+      color: rgb(186, 68, 68);
+      padding: 12px 28px;
+      font-size: 24px;
+      font-weight: bolder;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      font-family: var.$Rubik;
+      transition: 0.4s ease;
+
+      @media (max-width: 750px) {
+        font-size: 22px;
+        padding: 10px 22px;
+      }
+    }
+  }
+
+  // background image
   .HomepageHeader-background {
     position: absolute;
     top: 0;
@@ -28,7 +101,7 @@
     background-size: cover;
     background-position: center;
     background-image: url("./coverImage.jpg");
-    transform: scale(1.01);
+    transform: scale(1.02);
 
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -44,35 +117,6 @@
       height: 100%;
       background: rgb(154, 135, 139);
       mix-blend-mode: multiply;
-    }
-  }
-
-  .container {
-    padding: 20px;
-    h1 {
-      font-family: "Alex Brush", cursive;
-      font-size: 110px;
-      font-weight: bolder;
-      padding-bottom: 50px;
-    }
-
-    p {
-      width: 600px;
-      font-size: 32px;
-      line-height: 33px;
-      font-weight: 900;
-      margin-bottom: 50px;
-    }
-
-    a {
-      width: max-content;
-      border-radius: 50px;
-      background-color: var.$primary-pink;
-      color: rgb(186, 68, 68);
-      padding: 13px 20px;
-      font-size: 30px;
-      font-weight: bolder;
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     }
   }
 }
