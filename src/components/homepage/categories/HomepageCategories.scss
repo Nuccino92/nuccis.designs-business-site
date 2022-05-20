@@ -9,18 +9,36 @@
   }
 
   h2 {
-    font-size: 60px;
-    padding: 0 0 40px 70px;
-    background-color: var.$primary-beige;
+    font-size: 90px;
+    padding: 0 0 10px 70px;
+    font-family: var.$Alex-Brush;
+    font-weight: 400;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1400px) {
+      font-size: 70px;
       text-align: center;
-      font-size: 33px;
-      padding: 0 10px 40px 10px;
+      padding: 0 0 10px 0;
+    }
+
+    @media (max-width: 1150px) {
+      font-size: 65px;
+      text-align: center;
+    }
+
+    @media (max-width: 905px) {
+      font-size: 55px;
+      text-align: center;
+    }
+
+    @media (max-width: 750px) {
+      font-weight: 600;
+      font-size: 43px;
+      padding-top: 40px;
     }
 
     @media (max-width: 500px) {
-      font-size: 25px;
+      font-size: 37px;
+      padding-top: 0;
     }
   }
 
@@ -35,6 +53,12 @@
       width: 100vw;
       height: 530px;
       border: 3px solid var.$primary-beige;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
 
       .container {
         position: absolute;
@@ -87,43 +111,16 @@
     }
   }
 
-  // each category image
-  .home-decor-cover {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .pet-cover {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .invitations-cover {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .clothing-cover {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .bridal-cover {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-
   // view more container
   .view-more-categories {
     width: 100%;
     background-color: var.$primary-beige;
-    padding: 110px 20px 110px 150px;
+    padding: 100px 20px 110px 100px;
     position: relative;
+
+    @media (max-width: 1450px) {
+      padding: 110px 20px 110px 70px;
+    }
 
     @media (max-width: 1200px) {
       padding: 110px 20px;
@@ -134,15 +131,25 @@
     }
 
     h4 {
-      font-size: 32px;
+      font-size: 80px;
       margin-bottom: 20px;
+      font-family: var.$Alex-Brush;
+      font-weight: 400;
 
-      @media (max-width: 650px) {
-        font-size: 22px;
+      @media (max-width: 1750px) {
+        font-size: 70px;
       }
 
-      @media (max-width: 400px) {
-        font-size: 18px;
+      @media (max-width: 1450px) {
+        font-size: 60px;
+      }
+
+      @media (max-width: 1300px) {
+        font-size: 50px;
+      }
+
+      @media (max-width: 970px) {
+        font-size: 40px;
       }
     }
 
