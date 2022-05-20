@@ -1,0 +1,38 @@
+@use "../../../scss/variables" as var;
+
+.HomepageAboutMe {
+  width: 82vw;
+  margin: 0 auto;
+  margin-top: 200px;
+
+  .row {
+    display: flex;
+
+    .col {
+      width: 50%;
+      height: 600px;
+    }
+
+    .col:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 1px solid black;
+      border-top: 1px solid black;
+
+      a {
+        font-size: 35px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
