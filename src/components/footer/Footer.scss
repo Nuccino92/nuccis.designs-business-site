@@ -1,14 +1,7 @@
 @use "../../scss/variables" as var;
 
-// footer tag in App component
-footer {
-  // position: absolute;
-  // bottom: 0;
-}
-
 // Footer component
 .Footer {
-  border-top: 2px solid rgb(231, 219, 219);
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -16,10 +9,20 @@ footer {
   padding: 50px 0;
   background-color: var.$primary-pink;
 
+  @media (max-width: 750px) {
+    flex-direction: column;
+    height: max-content;
+    padding: 30px;
+  }
+
   .navbar-nav {
     display: flex;
     flex-direction: column;
     margin: 0 30px;
+
+    @media (max-width: 750px) {
+      margin: 13px 0;
+    }
 
     h4 {
       letter-spacing: 1px;
@@ -38,6 +41,10 @@ footer {
   .Footer-socials {
     margin-left: 150px;
 
+    @media (max-width: 750px) {
+      margin: 13px 0;
+    }
+
     .container {
       display: flex;
       margin: 0;
@@ -52,9 +59,5 @@ footer {
         }
       }
     }
-  }
-  @media (max-width: 850px) {
-    // make desponsive
-    flex-direction: column;
   }
 }
