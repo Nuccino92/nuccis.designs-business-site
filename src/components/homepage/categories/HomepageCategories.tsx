@@ -23,21 +23,21 @@ const HomepageCategories = () => {
         <Col>
           <img src={homeDecorCover} alt="Pillows with custom print"></img>
           <Container>
-            <h4>Home Decor</h4>
+            <h4 aria-label="Home Decor">Home Decor</h4>
             <button>View More</button>
           </Container>
         </Col>
         <Col>
           <img src={petCover} alt="Dog with mug of decal of it"></img>
           <Container>
-            <h4>Pets</h4>
+            <h4 aria-label="Pets">Pets</h4>
             <button>View More</button>
           </Container>
         </Col>
         <Col>
           <img src={invitationCover} alt="Custom invitations"></img>
           <Container>
-            <h4>Invitations</h4>
+            <h4 aria-label="Invitations">Invitations</h4>
             <button>View More</button>
           </Container>
         </Col>
@@ -46,35 +46,37 @@ const HomepageCategories = () => {
         <Col>
           <img src={clothingCover} alt="Custom t-shirts"></img>
           <Container>
-            <h4>Clothing</h4>
+            <h4 aria-label="Clothing">Clothing</h4>
             <button>View More</button>
           </Container>
         </Col>
         <Col>
           <img src={bridalCover} alt="Bridal party carepackage"></img>
           <Container>
-            <h4>Bridal Designs</h4>
+            <h4 aria-label="Bridal Designs">Bridal Designs</h4>
             <button>View More</button>
           </Container>
         </Col>
         <Col>
           <img src={signCover} alt="Custom t-shirts"></img>
           <Container>
-            <h4>Signs</h4>
+            <h4 aria-label="Signs">Signs</h4>
             <button>View More</button>
           </Container>
         </Col>
       </Row>
 
       <Container className="view-more-categories">
-        <h4>View more designs and a full breakdown of my services</h4>
+        <h4 aria-label="View more caregories">
+          View more designs and a full breakdown of my services
+        </h4>
         <Link to="/services">
           <button>Click Here</button>
         </Link>
         <Container>
-          <img src={TeddyBear} alt=""></img>
-          <img src={DogMug} alt=""></img>
-          <img src={GroomsPackage} alt=""></img>
+          <img src={TeddyBear} alt="teddy bear"></img>
+          <img src={DogMug} alt="dog with decal of itself on a much"></img>
+          <img src={GroomsPackage} alt="box with custom decal on it"></img>
         </Container>
       </Container>
     </Container>
