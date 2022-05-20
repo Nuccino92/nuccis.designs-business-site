@@ -8,7 +8,7 @@ const HomepageHeader = () => {
     <Container className="HomepageHeader">
       <Container>
         {/*  @ts-expect-error: */}
-        <Fade duration={2000}>
+        <Fade duration={2000} triggerOnce>
           <h1>nuccis designs</h1>
           <p>Custom designed products that are made for you. </p>
           <Link to="/services">Services</Link>
