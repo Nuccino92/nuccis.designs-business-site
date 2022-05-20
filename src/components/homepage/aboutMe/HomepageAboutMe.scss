@@ -9,6 +9,10 @@
     width: 100vw;
   }
 
+  @media (max-width: 400px) {
+    margin-top: 130px;
+  }
+
   .row {
     display: flex;
 
@@ -62,5 +66,9 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    &:nth-child(1) {
+      object-position: left top;
+    }
   }
 }
