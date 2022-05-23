@@ -1,0 +1,65 @@
+@use "../../../../scss/variables" as var;
+
+.CustomLeftArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  border: 2px solid black;
+  color: black;
+  position: absolute;
+  left: 43%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  margin-bottom: -17px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.3s ease;
+
+  &:active {
+    background-color: var.$primary-pink;
+    border: 2px solid var.$primary-pink;
+    margin-left: -7px;
+  }
+
+  @media (max-width: 1400px) {
+    left: 20%;
+  }
+
+  @media (max-width: 400px) {
+    width: 100px;
+  }
+}
+
+.CustomRightArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  border: 2px solid black;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  padding: 6px;
+  margin-bottom: -17px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.3s ease;
+
+  &:active {
+    background-color: var.$primary-pink;
+    border: 2px solid var.$primary-pink;
+    margin-left: 7px;
+  }
+
+  @media (max-width: 1400px) {
+    left: 80%;
+  }
+
+  @media (max-width: 400px) {
+    width: 100px;
+  }
+}
