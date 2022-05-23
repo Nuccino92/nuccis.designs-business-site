@@ -24,48 +24,65 @@ const HomepageCategories = () => {
         <h2>Check out some popular product categories</h2>
         <Row>
           <Col>
-            <img src={homeDecorCover} alt="Pillows with custom print"></img>
-            <Container>
-              <h4 aria-label="Home Decor">Home Decor</h4>
-              <button>View More</button>
-            </Container>
+            <Link to="/services/homedecor">
+              <img src={homeDecorCover} alt="Pillows with custom print"></img>
+              <Container>
+                <h4 aria-label="Home Decor">Home Decor</h4>{" "}
+                <button>View More</button>
+              </Container>{" "}
+            </Link>
           </Col>
+
           <Col>
-            <img src={petCover} alt="Dog with mug of decal of it"></img>
-            <Container>
-              <h4 aria-label="Pets">Pets</h4>
-              <button>View More</button>
-            </Container>
+            <Link to="/services/pets">
+              <img src={petCover} alt="Dog with mug of decal of it"></img>
+              <Container>
+                <h4 aria-label="Pets">Pets</h4>
+                <button>View More</button>
+              </Container>
+            </Link>
           </Col>
+
           <Col>
-            <img src={invitationCover} alt="Custom invitations"></img>
-            <Container>
-              <h4 aria-label="Invitations">Invitations</h4>
-              <button>View More</button>
-            </Container>
+            <Link to="/services/invitations">
+              <img src={invitationCover} alt="Custom invitations"></img>
+              <Container>
+                <h4 aria-label="Invitations">Invitations</h4>
+                <button>View More</button>
+              </Container>
+            </Link>
           </Col>
         </Row>
+
         <Row>
           <Col>
-            <img src={clothingCover} alt="Custom t-shirts"></img>
-            <Container>
-              <h4 aria-label="Clothing">Clothing</h4>
-              <button>View More</button>
-            </Container>
+            <Link to="/services/clothing">
+              <img src={clothingCover} alt="Custom t-shirts"></img>
+              <Container>
+                <h4 aria-label="Clothing">Clothing</h4>
+                <button>View More</button>
+              </Container>
+            </Link>
           </Col>
+
           <Col>
-            <img src={bridalCover} alt="Bridal party carepackage"></img>
-            <Container>
-              <h4 aria-label="Bridal Designs">Bridal Designs</h4>
-              <button>View More</button>
-            </Container>
+            <Link to="/services/bridal">
+              <img src={bridalCover} alt="Bridal party carepackage"></img>
+              <Container>
+                <h4 aria-label="Bridal Designs">Bridal Designs</h4>
+                <button>View More</button>
+              </Container>
+            </Link>
           </Col>
+
           <Col>
-            <img src={signCover} alt="Custom t-shirts"></img>
-            <Container>
-              <h4 aria-label="Signs">Signs</h4>
-              <button>View More</button>
-            </Container>
+            <Link to="/services/signs">
+              <img src={signCover} alt="Custom t-shirts"></img>
+              <Container>
+                <h4 aria-label="Signs">Signs</h4>
+                <button>View More</button>
+              </Container>
+            </Link>
           </Col>
         </Row>
 
