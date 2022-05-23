@@ -1,0 +1,71 @@
+@use "../../scss/variables" as var;
+
+.Services {
+  .container {
+    padding: 200px 50px;
+    width: 80%;
+    margin: 0 auto;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      padding: 70px 13px;
+      background-color: var.$primary-beige;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 50px;
+
+      @media (max-width: 400px) {
+        text-align: center;
+      }
+    }
+
+    p {
+      margin-bottom: 40px;
+      width: 70%;
+      font-size: 18px;
+
+      @media (max-width: 1250px) {
+        width: initial;
+      }
+    }
+
+    .row {
+      margin-bottom: 22px;
+
+      h4 {
+        margin-bottom: 3px;
+      }
+    }
+
+    a {
+      font-weight: 400;
+      color: blue;
+      margin-right: 20px;
+      position: relative;
+
+      // to add margin bottom to the links
+      display: inline-block;
+
+      @media (max-width: 750px) {
+        margin-bottom: 1px;
+      }
+
+      &:hover {
+        &:after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          border-width: 0 0 1px;
+          border-style: solid;
+        }
+      }
+    }
+  }
+}
