@@ -1,0 +1,107 @@
+@use "../../scss/variables" as var;
+
+.AboutMe {
+  .row {
+    margin: 0 auto;
+    padding: 200px 20px;
+    width: 80%;
+    display: flex;
+
+    @media (max-width: 1050px) {
+      width: 100%;
+      padding: 100px 20px;
+    }
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 400px) {
+      padding: 70px 13px;
+      background-color: var.$primary-beige;
+    }
+  }
+
+  .frame {
+    background-color: #ddc;
+    border: solid 5vmin #eee;
+    border-bottom-color: #fff;
+    border-left-color: #eee;
+    border-radius: 2px;
+    border-right-color: #eee;
+    border-top-color: #ddd;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+      0 5px 10px 5px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    margin: 0 35px 50px 0;
+    height: 600px;
+    width: max-content;
+    padding: 2vmin;
+    position: relative;
+    text-align: center;
+    &:before {
+      border-radius: 2px;
+      bottom: -2vmin;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+      content: "";
+      left: -2vmin;
+      position: absolute;
+      right: -2vmin;
+      top: -2vmin;
+    }
+
+    &:after {
+      border-radius: 2px;
+      bottom: -2.5vmin;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+      content: "";
+      left: -2.5vmin;
+      position: absolute;
+      right: -2.5vmin;
+      top: -2.5vmin;
+    }
+
+    @media (max-width: 1200px) {
+      height: 450px;
+    }
+
+    @media (max-width: 800px) {
+      height: 350px;
+    }
+
+    @media (max-width: 750px) {
+      margin-right: 0;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+      float: left;
+      border: solid 2px;
+      border-bottom-color: #ffe;
+      border-left-color: #eed;
+      border-right-color: #eed;
+      border-top-color: #ccb;
+    }
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    font-size: 50px;
+
+    @media (max-width: 750px) {
+      text-align: center;
+    }
+  }
+
+  p {
+    margin-bottom: 40px;
+    width: 90%;
+    font-size: 18px;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+}
