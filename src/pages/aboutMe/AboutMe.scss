@@ -1,6 +1,7 @@
 @use "../../scss/variables" as var;
 
 .AboutMe {
+  background-color: var.$primary-beige;
   .row {
     margin: 0 auto;
     padding: 200px 20px;
@@ -19,7 +20,6 @@
 
     @media (max-width: 400px) {
       padding: 70px 13px;
-      background-color: var.$primary-beige;
     }
   }
 

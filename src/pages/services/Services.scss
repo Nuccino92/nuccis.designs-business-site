@@ -1,6 +1,7 @@
 @use "../../scss/variables" as var;
 
 .Services {
+  background-color: var.$primary-beige;
   .container {
     padding: 200px 50px;
     width: 80%;
@@ -12,7 +13,6 @@
 
     @media (max-width: 400px) {
       padding: 70px 13px;
-      background-color: var.$primary-beige;
     }
 
     h1 {
