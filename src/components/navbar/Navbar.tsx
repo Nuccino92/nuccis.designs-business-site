@@ -134,6 +134,103 @@ const Navbar: React.FC = () => {
                   CLIENTS
                 </Link>
               </Fade>
+              <ul className="Navbar-mobile-dropdown" onBlur={handleBlur}>
+                <Fade direction="left" delay={1300}>
+                  <button
+                    onClick={() =>
+                      setDropdown((prev) => {
+                        return !prev;
+                      })
+                    }
+                  >
+                    PRODUCTS <AiFillCaretDown size={19} />
+                  </button>
+                </Fade>
+                {dropdown && (
+                  <Container>
+                    <Fade>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/bridal"
+                      >
+                        Bridal
+                      </Link>
+                    </Fade>
+                    <Fade delay={200}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/homedecor"
+                      >
+                        Home Decor
+                      </Link>
+                    </Fade>
+                    <Fade delay={250}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/pets"
+                      >
+                        Pets
+                      </Link>
+                    </Fade>
+                    <Fade delay={300}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/clothing"
+                      >
+                        Clothing
+                      </Link>
+                    </Fade>
+                    <Fade delay={350}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/children"
+                      >
+                        Children
+                      </Link>
+                    </Fade>
+                    <Fade delay={400}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/festive"
+                      >
+                        Festive
+                      </Link>
+                    </Fade>
+                    <Fade delay={450}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/teacher"
+                      >
+                        Teacher
+                      </Link>
+                    </Fade>
+                    <Fade delay={500}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/decals"
+                      >
+                        Decals
+                      </Link>
+                    </Fade>
+                    <Fade delay={550}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/invitations"
+                      >
+                        Invitations
+                      </Link>
+                    </Fade>
+                    <Fade delay={600}>
+                      <Link
+                        onClick={() => setMobileNav(false)}
+                        to="/services/signs"
+                      >
+                        Signs
+                      </Link>
+                    </Fade>
+                  </Container>
+                )}
+              </ul>
             </Nav>
           )}
         </BoostrapNavbar>
