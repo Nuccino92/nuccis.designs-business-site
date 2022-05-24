@@ -8,6 +8,7 @@ import PaymentsAndReturnPolicy from "./pages/paymentsAndReturnPolicy/PaymentsAnd
 import ProductDeliveryAndReturns from "./pages/productDelivery/ProductDelivery";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import "./pages/category/category.scss";
 
 // service pages
 import HomeDecor from "./pages/category/homeDecor/HomeDecor";
@@ -45,7 +46,7 @@ const App: React.FC = () => {
             {/* service category routes */}
             <Route path="/services/homedecor" element={<HomeDecor />} />
             <Route path="/services/pets" element={<Pets />} />
-            <Route path="/services/clothings" element={<Clothing />} />
+            <Route path="/services/clothing" element={<Clothing />} />
             <Route path="/services/invitations" element={<Invitations />} />
             <Route path="/services/bridal" element={<Bridal />} />
             <Route path="/services/children" element={<Childern />} />
