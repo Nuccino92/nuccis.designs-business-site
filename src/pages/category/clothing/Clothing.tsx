@@ -3,6 +3,7 @@ import { Col, Container, ListGroup, Row } from "react-bootstrap";
 import StoryButton from "../../../styledComponents/StoryButton.styled";
 import FacebookReviewButton from "../../../styledComponents/FacebookReviewButton.styled";
 
+// photo gallery images
 import p1 from "../images/clothing/1.jpg";
 import p2 from "../images/clothing/2.jpg";
 import p3 from "../images/clothing/3.jpg";
@@ -37,6 +38,8 @@ import p31 from "../images/clothing/31.jpg";
 import p32 from "../images/clothing/32.jpg";
 import p33 from "../images/clothing/33.jpg";
 import p34 from "../images/clothing/34.jpg";
+import p35 from "../images/clothing/35.jpg";
+import p36 from "../images/clothing/36.jpg";
 
 const Clothing: React.FC = () => {
   return (
@@ -84,6 +87,7 @@ const Clothing: React.FC = () => {
               <img src={p13} alt=""></img>
               <img src={p32} alt=""></img>
               <img src={p19} alt=""></img>
+              <img src={p36} alt=""></img>
               <img src={p20} alt=""></img>
               <img src={p21} alt=""></img>
               <img src={p22} alt=""></img>
@@ -105,6 +109,7 @@ const Clothing: React.FC = () => {
             <Col>
               <img src={p9} alt=""></img>
               <img src={p14} alt=""></img>
+              <img src={p35} alt=""></img>
               <img src={p15} alt=""></img>
               <img src={p16} alt=""></img>
               <img src={p12} alt=""></img>
