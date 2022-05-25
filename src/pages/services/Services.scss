@@ -17,7 +17,12 @@
 
     h1 {
       margin-bottom: 40px;
-      font-size: 50px;
+      font-size: 120px;
+      font-family: var.$Alex-Brush;
+
+      @media (max-width: 1200px) {
+        font-size: 80px;
+      }
 
       @media (max-width: 400px) {
         text-align: center;
