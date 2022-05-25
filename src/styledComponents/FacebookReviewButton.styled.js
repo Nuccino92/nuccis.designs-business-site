@@ -8,6 +8,16 @@ const FacebookReviewButton = styled.button`
   padding: 15px;
   cursor: pointer;
   border-radius: 4px;
+
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-in;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    font-size: 17px;
+  }
 `;
 
 export default FacebookReviewButton;

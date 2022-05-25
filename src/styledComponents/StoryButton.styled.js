@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const StoryButton = styled.button`
   padding: 15px;
@@ -33,6 +33,16 @@ const StoryButton = styled.button`
     #bc1888 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+  &:hover {
+    transform: scale(1.04);
+    transition: 0.3s ease-in;
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px;
+    font-size: 17px;
+  }
 `;
 
 export default StoryButton;
