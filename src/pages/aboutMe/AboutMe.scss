@@ -1,7 +1,6 @@
 @use "../../scss/variables" as var;
 
 .AboutMe {
-  background-color: var.$primary-beige;
   .row {
     margin: 0 auto;
     padding: 200px 20px;
@@ -74,6 +73,10 @@
       margin-right: 0;
     }
 
+    @media (max-width: 500px) {
+      height: 300px;
+    }
+
     img {
       height: 100%;
       width: auto;
@@ -88,10 +91,19 @@
 
   h1 {
     margin-bottom: 40px;
-    font-size: 50px;
+    font-size: 100px;
+    font-family: var.$Alex-Brush;
+
+    @media (max-width: 1200px) {
+      font-size: 80px;
+    }
 
     @media (max-width: 750px) {
       text-align: center;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 50px;
     }
   }
 
