@@ -8,7 +8,7 @@
   align-items: center;
 
   @media (max-width: 750px) {
-    padding: 50px 20px;
+    padding: 50px 0px;
   }
 
   header {
@@ -29,7 +29,21 @@
 
       @media (max-width: 500px) {
         width: 100%;
-        font-size: 50px;
+        font-size: 62px;
+      }
+    }
+
+    // container for festive page with 2 story links
+    .container {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin-bottom: 10px !important;
+      }
+
+      @media (max-width: 750px) {
+        flex-direction: column;
       }
     }
 
@@ -53,6 +67,7 @@
           font-size: 17px;
         }
       }
+
       .row {
         display: flex;
         justify-content: space-evenly;
@@ -123,6 +138,8 @@
 
       .col {
         display: grid;
+        align-items: center;
+        margin: 0 auto;
       }
 
       img {
@@ -156,7 +173,7 @@
         }
 
         @media (max-width: 310px) {
-          width: 266px;
+          width: 226px;
         }
       }
     }
