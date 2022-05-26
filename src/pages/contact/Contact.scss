@@ -1,0 +1,112 @@
+@use "../../scss/variables" as var;
+
+.Contact {
+  .row {
+    padding: 250px 50px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width: 1050px) {
+      width: 100%;
+      padding: 100px 20px;
+    }
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (max-width: 400px) {
+      padding: 70px 13px;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 120px;
+      font-family: var.$Alex-Brush;
+
+      @media (max-width: 1500px) {
+        font-size: 77px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 60px;
+        text-align: center;
+      }
+    }
+
+    p {
+      margin-bottom: 40px;
+      width: 80%;
+      font-size: 18px;
+
+      @media (max-width: 750px) {
+        width: initial;
+      }
+    }
+
+    h4 {
+      margin-bottom: 3px;
+      margin-top: 15px;
+      width: 90%;
+
+      @media (max-width: 750px) {
+        width: initial;
+      }
+
+      span {
+        color: rgb(255, 147, 165);
+      }
+    }
+
+    a {
+      font-weight: 400;
+      color: blue !important;
+      margin-right: 20px;
+      position: relative;
+
+      // to add margin bottom to the links
+      display: inline-block;
+
+      @media (max-width: 750px) {
+        margin-bottom: 1px;
+      }
+
+      &:hover {
+        &:after {
+          content: "";
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          border-width: 0 0 1px;
+          border-style: solid;
+        }
+      }
+    }
+  }
+  .col:nth-child(2) {
+    height: 600px;
+    width: max-content;
+    img {
+      height: 100%;
+      width: auto;
+      box-shadow: -55px -55px 0 -40px var.$primary-pink,
+        55px 55px 0 -40px var.$primary-pink;
+
+      @media (max-width: 1200px) {
+        height: 450px;
+      }
+
+      @media (max-width: 800px) {
+        height: 350px;
+      }
+
+      @media (max-width: 750px) {
+        margin-right: 0;
+        margin-top: 100px;
+      }
+    }
+  }
+}
