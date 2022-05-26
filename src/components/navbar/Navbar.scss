@@ -34,9 +34,11 @@
         }
       }
 
+      // web dropdown container
       .Navbar-dropdown {
         position: relative;
 
+        // web dropdown list
         .container {
           padding: 30px 0 30px 0;
           display: flex;
@@ -53,7 +55,7 @@
             width: 100%;
 
             a {
-              font-size: 16px;
+              font-size: 17px;
               padding: 9px 15px;
               display: inline-block;
               width: 100%;
@@ -86,7 +88,6 @@
   display: block;
   top: 50%;
   right: 0;
-
   position: absolute;
   top: 50%;
   width: 36px;
@@ -120,27 +121,29 @@
 .Navbar-minimized {
   .mobile-nav {
     background-color: var.$primary-pink;
-    position: fixed;
+    position: absolute;
     right: 0;
+    max-height: 100vh;
     height: 100vh;
     width: 100vw;
     z-index: 100;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: 1s ease;
-    padding-top: 80px;
+    padding-top: 20px;
+    overflow-y: hidden !important;
 
     div {
-      margin: 20px 0;
+      margin: 8px 0;
+
       a {
         font-size: 27px;
         font-weight: bold;
       }
     }
 
-    // dropdown
+    // mobile nav products dropdown
     .Navbar-mobile-dropdown {
       position: relative;
       display: flex;
@@ -164,6 +167,10 @@
         div {
           width: 100%;
           margin: 10px 0;
+
+          @media (max-width: 750px) {
+            margin: 3px 0;
+          }
 
           a {
             font-size: 16px;
