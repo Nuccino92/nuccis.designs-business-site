@@ -1,0 +1,121 @@
+@use "../../scss/variables" as var;
+
+.Clients {
+  padding: 200px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 750px) {
+    padding: 50px 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-family: var.$Alex-Brush;
+      font-size: 130px;
+      text-align: center;
+
+      @media (max-width: 750px) {
+        font-size: 80px;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+        font-size: 80px;
+      }
+    }
+
+    p {
+      margin: 10px 0 30px 0;
+      font-size: 22px;
+      text-align: center;
+    }
+    // container for festive page with 2 story links
+    .container {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin-bottom: 10px !important;
+      }
+
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .Client-image-container {
+    margin: 150px 0 50px 0;
+    border-top: 1px solid grey;
+
+    @media (max-width: 750px) {
+      margin: 80px 0 30px 0;
+    }
+
+    h4 {
+      font-family: var.$Alex-Brush;
+      font-size: 60px;
+      margin: 15px;
+      padding: 12px;
+      background-color: var.$primary-pink;
+
+      @media (max-width: 750px) {
+        font-size: 36px;
+      }
+    }
+
+    .row {
+      display: flex;
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
+
+      .col {
+        display: grid;
+      }
+
+      img {
+        height: auto;
+        width: 500px;
+        display: inline-block;
+        margin: 10px;
+
+        @media (max-width: 1600px) {
+          width: 400px;
+        }
+
+        @media (max-width: 1300px) {
+          width: 300px;
+        }
+
+        @media (max-width: 1000px) {
+          width: 200px;
+        }
+
+        @media (max-width: 750px) {
+          width: 500px;
+        }
+
+        @media (max-width: 520px) {
+          width: 400px;
+        }
+
+        @media (max-width: 410px) {
+          width: 300px;
+        }
+
+        @media (max-width: 310px) {
+          width: 226px;
+        }
+      }
+    }
+  }
+}
