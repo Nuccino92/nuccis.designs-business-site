@@ -25,8 +25,8 @@ const Footer: React.FC = () => {
       <Nav>
         <h4>STORE POLICIES</h4>
         <Link to="productdelivery">Delivery</Link>
-        <Link to="payments-refunds">Payment</Link>
-        <Link to="payments-refunds">Refunds</Link>
+        <Link to="payments-policy">Payment</Link>
+        <Link to="payments-policy">Refunds</Link>
       </Nav>
       <Nav>
         <h4>QUICK LINKS</h4>

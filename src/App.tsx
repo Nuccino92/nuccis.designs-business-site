@@ -4,8 +4,8 @@ import Services from "./pages/services/Services";
 import AboutMe from "./pages/aboutMe/AboutMe";
 import Clients from "./pages/clients/Clients";
 import Contact from "./pages/contact/Contact";
-import PaymentsAndReturnPolicy from "./pages/paymentsAndReturnPolicy/PaymentsAndReturnPolicy";
-import ProductDeliveryAndReturns from "./pages/productDelivery/ProductDelivery";
+import PaymentsAndPolicy from "./pages/paymentsAndReturnPolicy/PaymentsAndPolicy";
+import ProductDelivery from "./pages/productDelivery/ProductDelivery";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import "./pages/category/category.scss";
@@ -34,14 +34,8 @@ const App: React.FC = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/aboutme" element={<AboutMe />} />
             <Route path="/clients" element={<Clients />} />
-            <Route
-              path="/payments-refunds"
-              element={<PaymentsAndReturnPolicy />}
-            />
-            <Route
-              path="/productdelivery"
-              element={<ProductDeliveryAndReturns />}
-            />
+            <Route path="/payments-policy" element={<PaymentsAndPolicy />} />
+            <Route path="/productdelivery" element={<ProductDelivery />} />
 
             {/* service category routes */}
             <Route path="/services/homedecor" element={<HomeDecor />} />
