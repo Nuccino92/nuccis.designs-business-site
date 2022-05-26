@@ -30,6 +30,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       {!minimized ? (
+        // web nav
         <BoostrapNavbar className="Navbar">
           <Container>
             <Link to="/" className="Navbar-Logo">
@@ -39,7 +40,8 @@ const Navbar: React.FC = () => {
               <Link to="/services">SERVICES</Link>
               <Link to="/contact">CONTACT</Link>
               <Link to="/aboutme">ABOUT ME</Link>
-              <Link to="/clients">CLIENTS</Link>
+              <Link to="/clients">CUSTOMERS</Link>
+              {/* web dropdown container*/}
               <ul className="Navbar-dropdown" onBlur={handleBlur}>
                 <button
                   onClick={() =>
@@ -50,6 +52,8 @@ const Navbar: React.FC = () => {
                 >
                   PRODUCTS <AiFillCaretDown size={19} />
                 </button>
+
+                {/* web dropdown list*/}
                 {dropdown && (
                   <Container>
                     <Fade>
@@ -89,6 +93,7 @@ const Navbar: React.FC = () => {
           </Container>
         </BoostrapNavbar>
       ) : (
+        // hamburger nav
         <BoostrapNavbar className="Navbar Navbar-minimized">
           <Container>
             <Link
@@ -107,6 +112,7 @@ const Navbar: React.FC = () => {
               })
             }
           ></button>
+          {/* hamburger nav opened */}
           {mobileNav && (
             <Nav className="mobile-nav">
               <Fade direction="right">
@@ -131,9 +137,11 @@ const Navbar: React.FC = () => {
               </Fade>
               <Fade direction="right" delay={1000}>
                 <Link onClick={() => setMobileNav(false)} to="/clients">
-                  CLIENTS
+                  CUSTOMERS
                 </Link>
               </Fade>
+
+              {/* mobile nav products dropdown */}
               <ul className="Navbar-mobile-dropdown" onBlur={handleBlur}>
                 <Fade direction="left" delay={1300}>
                   <button

@@ -11,7 +11,7 @@ const HomepageClients = () => {
       <Fade triggerOnce duration={2000}>
         <Row>
           <Col>
-            <Link to="/clients">Reviews / Clients</Link>
+            <Link to="/clients">Reviews / Customers</Link>
           </Col>
           <Col>
             <img
