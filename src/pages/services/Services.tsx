@@ -23,10 +23,10 @@ const Services: React.FC = () => {
               <h4>Links to answer a few of your questions </h4>
             </Col>
             <Col>
-              <Link to="/payments-refunds">Payments</Link>
-              <Link to="/payments-refunds">Refuned Policy</Link>
+              <Link to="/payments-policy">Payments</Link>
+              <Link to="/payments-policy">Refuned Policy</Link>
               <Link to="/productdelivery">Product Delivery</Link>
-              <Link to="/productdelivery">Returns / Changes</Link>
+              <Link to="/payments-policy">Returns / Changes</Link>
             </Col>
           </Row>
           <Row>
