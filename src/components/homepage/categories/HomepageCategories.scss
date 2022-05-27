@@ -50,7 +50,7 @@
           font-family: var.$Alex-Brush;
           font-size: 72px;
           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-          color: pink;
+          color: var.$primary-pink;
           margin-bottom: 10px;
 
           @media (max-width: 1470px) {
@@ -69,14 +69,14 @@
           color: black;
           background: rgb(255, 201, 210);
           border: 1px inset black;
-          outline: 1px solid pink;
+          outline: 1px solid var.$primary-pink;
           cursor: pointer;
           transition: 0.5s ease;
           border-radius: 2px;
 
           background: linear-gradient(
               to left,
-              rgb(255, 201, 210) 50%,
+              var.$primary-pink 50%,
               transparent 50%
             )
             right;
@@ -84,7 +84,7 @@
           transition: 0.5s ease-out;
 
           &:hover {
-            color: pink;
+            color: var.$primary-pink;
             background-position: left;
           }
 
@@ -128,24 +128,14 @@
     button {
       font-size: 26px;
       font-weight: bolder;
-      border: 3px solid rgb(255, 130, 151);
-      color: rgb(255, 130, 151);
+      border: 1px inset black;
+      outline: 1px solid var.$primary-pink;
+      color: var.$primary-pink;
+      background-color: var.$primary-pink;
       padding: 10px 25px;
       cursor: pointer;
       border-radius: 2px;
-
-      background: linear-gradient(
-          to left,
-          transparent 50%,
-          var.$primary-pink 50%
-        )
-        right;
-      background-size: 200%;
-      transition: 0.5s ease-out;
-
-      &:hover {
-        background-position: left;
-      }
+      color: black;
     }
 
     .container {

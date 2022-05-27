@@ -7,7 +7,7 @@
   padding: 240px 0;
   overflow: hidden;
   position: relative;
-  color: rgb(235, 219, 130);
+  color: black;
 
   @media (max-width: 450px) {
     padding: 120px 0;
@@ -22,12 +22,16 @@
 
     h1 {
       font-family: var.$Alex-Brush;
-      font-size: 120px;
+      font-size: 180px;
       font-weight: bolder;
       padding-bottom: 10px;
 
-      @media (max-width: 700px) {
-        font-size: 77px;
+      @media (max-width: 900px) {
+        font-size: 117px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 90px;
         padding-bottom: 6px;
       }
 
@@ -63,15 +67,17 @@
       }
     }
 
+    // service link
     a {
       width: max-content;
       border-radius: 50px;
       background-color: var.$primary-pink;
-      color: rgb(186, 68, 68);
+      color: black;
       padding: 12px 28px;
       font-size: 24px;
       font-weight: bolder;
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+      border: 1px inset black;
+      outline: 1px solid var.$primary-pink;
       font-family: var.$Rubik;
       transition: 0.4s ease;
 
@@ -101,13 +107,13 @@
     background-size: cover;
     background-position: center;
     background-image: url("./coverImage.jpg");
-    transform: scale(1.02);
+    transform: scale(1.07);
 
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    -moz-filter: blur(8px);
-    -o-filter: blur(8px);
-    -ms-filter: blur(8px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
 
     &::after {
       content: "";
@@ -115,7 +121,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background: rgb(154, 135, 139);
+      background: var.$primary-beige;
       mix-blend-mode: multiply;
     }
   }
