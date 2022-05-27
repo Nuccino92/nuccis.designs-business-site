@@ -20,6 +20,10 @@
 
       a {
         margin-left: 10px;
+        @media (max-width: 815px) {
+          font-size: 14px;
+          margin-left: 6px;
+        }
       }
 
       button {
@@ -28,6 +32,11 @@
         cursor: pointer;
         display: flex;
         align-items: center;
+
+        @media (max-width: 815px) {
+          font-size: 14px;
+          margin-left: 6px;
+        }
 
         svg {
           margin-left: 5px;
