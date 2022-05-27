@@ -36,6 +36,13 @@
       @media (max-width: 1250px) {
         width: initial;
       }
+
+      span {
+        a {
+          color: rgb(255, 147, 165);
+          font-weight: bolder;
+        }
+      }
     }
 
     .row {

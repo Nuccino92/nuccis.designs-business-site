@@ -12,11 +12,16 @@ const Services: React.FC = () => {
         <Container>
           <h1>About My Services</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-            odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
-            quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent
-            mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-            Vestibulum lacinia arcu eget nulla.
+            Nuccis Designs provides customers the ability to fully customize a
+            large number of products to fit their needs. I love making your
+            order, and I'm extremely happy to work with or assist you in any of
+            your designs. To fully accommodate our customers, we offer a rush
+            service to make sure you're able to get what you need when you need
+            it. If you're interested in creating a product or wish to ask
+            questions please{" "}
+            <span>
+              <Link to="/contact">click here.</Link>
+            </span>
           </p>
           <Row>
             <Col>
@@ -36,7 +41,6 @@ const Services: React.FC = () => {
                 <Link to="/contact">Contact Page</Link>
               </h4>
             </Col>
-            <Col></Col>
           </Row>
         </Container>
       </Fade>
