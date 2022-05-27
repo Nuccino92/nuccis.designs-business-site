@@ -29,7 +29,7 @@ const Services: React.FC = () => {
             </Col>
             <Col>
               <Link to="/payments-policy">Payments</Link>
-              <Link to="/payments-policy">Refuned Policy</Link>
+              <Link to="/payments-policy">Refund Policy</Link>
               <Link to="/productdelivery">Product Delivery</Link>
               <Link to="/payments-policy">Returns / Changes</Link>
             </Col>

@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             <h4>Links to answer a few of your questions </h4>
 
             <Link to="/payments-policy">Payments</Link>
-            <Link to="/payments-policy">Refuned Policy</Link>
+            <Link to="/payments-policy">Refund Policy</Link>
             <Link to="/productdelivery">Product Delivery</Link>
             <Link to="/payments-policy">Returns / Changes</Link>
 
