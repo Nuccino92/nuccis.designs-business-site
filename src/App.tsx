@@ -22,33 +22,37 @@ import Festive from "./pages/category/festive/Festive";
 import Teacher from "./pages/category/teacher/Teacher";
 import Decals from "./pages/category/decals/Decals";
 
+import ScrollToTop from "./utils/ScrollToTop";
+
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <div className="App">
         <Navbar />
         <main>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/aboutme" element={<AboutMe />} />
-            <Route path="/clients" element={<Clients />} />
-            <Route path="/payments-policy" element={<PaymentsAndPolicy />} />
-            <Route path="/productdelivery" element={<ProductDelivery />} />
+          <ScrollToTop>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/aboutme" element={<AboutMe />} />
+              <Route path="/clients" element={<Clients />} />
+              <Route path="/payments-policy" element={<PaymentsAndPolicy />} />
+              <Route path="/productdelivery" element={<ProductDelivery />} />
 
-            {/* service category routes */}
-            <Route path="/services/homedecor" element={<HomeDecor />} />
-            <Route path="/services/pets" element={<Pets />} />
-            <Route path="/services/clothing" element={<Clothing />} />
-            <Route path="/services/invitations" element={<Invitations />} />
-            <Route path="/services/bridal" element={<Bridal />} />
-            <Route path="/services/children" element={<Childern />} />
-            <Route path="/services/signs" element={<Signs />} />
-            <Route path="/services/festive" element={<Festive />} />
-            <Route path="/services/teacher" element={<Teacher />} />
-            <Route path="/services/decals" element={<Decals />} />
-          </Routes>
+              {/* service category routes */}
+              <Route path="/services/homedecor" element={<HomeDecor />} />
+              <Route path="/services/pets" element={<Pets />} />
+              <Route path="/services/clothing" element={<Clothing />} />
+              <Route path="/services/invitations" element={<Invitations />} />
+              <Route path="/services/bridal" element={<Bridal />} />
+              <Route path="/services/children" element={<Childern />} />
+              <Route path="/services/signs" element={<Signs />} />
+              <Route path="/services/festive" element={<Festive />} />
+              <Route path="/services/teacher" element={<Teacher />} />
+              <Route path="/services/decals" element={<Decals />} />
+            </Routes>
+          </ScrollToTop>
         </main>
         <footer>
           <Footer />
