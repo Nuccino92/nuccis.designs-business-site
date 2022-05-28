@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Fade } from "react-awesome-reveal";
 import { Col, Container, Row } from "react-bootstrap";
 import "./PaymentsAndPolicy.scss";
@@ -5,6 +6,13 @@ import "./PaymentsAndPolicy.scss";
 const PaymentsAndPolicy: React.FC = () => {
   return (
     <Container className="PaymentsAndPolicy">
+      <Helmet>
+        <title>nuccis designs | Payments & Policy</title>
+        <meta
+          name="description"
+          content="For all you customized product needs! - Anything you want, we have!"
+        ></meta>
+      </Helmet>
       {/* @ts-ignore: Unreachable code error  */}
       <Fade triggerOnce>
         <h1>Payments and Policy</h1>

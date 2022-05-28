@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Fade } from "react-awesome-reveal";
 import { Col, Container, Row } from "react-bootstrap";
 import "./AboutMe.scss";
@@ -6,6 +7,13 @@ import familyPhoto from "./images/family.jpg";
 const AboutMe: React.FC = () => {
   return (
     <Container className="AboutMe">
+      <Helmet>
+        <title>nuccis designs | About Me</title>
+        <meta
+          name="description"
+          content="For all you customized product needs! - Anything you want, we have!"
+        ></meta>
+      </Helmet>
       {/* @ts-ignore: Unreachable code error  */}
       <Fade triggerOnce>
         <Row>

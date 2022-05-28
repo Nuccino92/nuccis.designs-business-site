@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ServicesCategories from "../../components/services/serviceCategories/ServicesCategories";
@@ -7,6 +8,13 @@ import { Fade } from "react-awesome-reveal";
 const Services: React.FC = () => {
   return (
     <Container className="Services">
+      <Helmet>
+        <title>nuccis designs | Services</title>
+        <meta
+          name="description"
+          content="For all you customized product needs! - Anything you want, we have!"
+        ></meta>
+      </Helmet>
       {/* @ts-ignore: Unreachable code error  */}
       <Fade>
         <Container>

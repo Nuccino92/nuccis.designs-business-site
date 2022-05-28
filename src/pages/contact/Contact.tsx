@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Fade } from "react-awesome-reveal";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -7,6 +8,13 @@ import logo from "./logo.jpg";
 const Contact: React.FC = () => {
   return (
     <Container className="Contact">
+      <Helmet>
+        <title>nuccis designs | Contact</title>
+        <meta
+          name="description"
+          content="For all you customized product needs! - Anything you want, we have!"
+        ></meta>
+      </Helmet>
       {/* @ts-ignore: Unreachable code error  */}
       <Fade>
         <Row>

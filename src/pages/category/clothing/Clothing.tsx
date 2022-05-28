@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Fade } from "react-awesome-reveal";
 import { Col, Container, ListGroup, Row } from "react-bootstrap";
 import StoryButton from "../../../styledComponents/StoryButton.styled";
@@ -44,6 +45,13 @@ import p36 from "../images/clothing/36.jpg";
 const Clothing: React.FC = () => {
   return (
     <Container className="Category">
+      <Helmet>
+        <title>nuccis designs | Clothing</title>
+        <meta
+          name="description"
+          content="For all you customized product needs! - Anything you want, we have!"
+        ></meta>
+      </Helmet>
       {/* @ts-ignore: Unreachable code error  */}
       <Fade triggerOnce>
         <header>
