@@ -1,12 +1,7 @@
 import "./CustomArrows.scss";
 import { BsArrowRight } from "react-icons/bs";
 
-const CustomRightArrow = ({ onClick, ...rest }: any) => {
-  const {
-    onMove,
-    carouselState: { currentSlide, deviceType },
-  } = rest;
-
+const CustomRightArrow = ({ onClick }: any) => {
   return (
     <div className="CustomRightArrow" onClick={() => onClick()}>
       Next

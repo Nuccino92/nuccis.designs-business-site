@@ -20,7 +20,6 @@ import p13 from "../images/pets/13.jpg";
 import p14 from "../images/pets/14.jpg";
 import p15 from "../images/pets/15.jpg";
 import p16 from "../images/pets/16.jpg";
-import p17 from "../images/pets/17.jpg";
 
 const Pets: React.FC = () => {
   return (
