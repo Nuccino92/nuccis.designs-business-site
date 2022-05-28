@@ -105,6 +105,7 @@ const Navbar: React.FC = () => {
             </Link>
           </Container>
           <button
+            aria-label="menu button"
             className={mobileNav ? "menu-btn close-btn" : "menu-btn"}
             onClick={() =>
               setMobileNav((prev) => {
