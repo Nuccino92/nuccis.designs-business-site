@@ -27,9 +27,9 @@ const HomepageCategories = () => {
             <Link to="/services/homedecor">
               <img src={homeDecorCover} alt="Pillows with custom print"></img>
               <Container>
-                <h4 aria-label="Home Decor">Home Decor</h4>{" "}
+                <h4 aria-label="Home Decor">Home Decor</h4>
                 <button>View More</button>
-              </Container>{" "}
+              </Container>
             </Link>
           </Col>
 
@@ -90,9 +90,11 @@ const HomepageCategories = () => {
           <h4 aria-label="View more caregories">
             View more designs and a full breakdown of my services
           </h4>
-          <Link to="/services">
-            <button>Click Here</button>
-          </Link>
+
+          <button>
+            <Link to="/services">Service Page</Link>
+          </button>
+
           <Container>
             <img src={TeddyBear} alt="teddy bear"></img>
             <img src={DogMug} alt="dog with decal of itself on a much"></img>

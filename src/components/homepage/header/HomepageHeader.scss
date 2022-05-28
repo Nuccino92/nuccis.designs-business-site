@@ -46,7 +46,7 @@
 
     p {
       width: 90%;
-      font-size: 32px;
+      font-size: 38px;
       line-height: 33px;
       font-weight: 900;
       margin-bottom: 60px;
@@ -109,11 +109,11 @@
     background-image: url("./coverImage.jpg");
     transform: scale(1.07);
 
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
 
     &::after {
       content: "";
