@@ -20,6 +20,7 @@
       a {
         font-size: 15px;
         margin-left: 10px;
+
         @media (max-width: 815px) {
           font-size: 14px;
           margin-left: 6px;
@@ -197,5 +198,5 @@
 .current-tab {
   position: relative;
   color: white !important;
-  font-weight: 900;
+  transition: 0.5s ease !important;
 }
