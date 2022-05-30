@@ -1,7 +1,6 @@
 @use "../../scss/variables" as var;
 
 .Navbar {
-  border-bottom: 2px solid rgb(231, 219, 219);
   padding: 5px 40px;
   position: sticky;
   top: 0;
@@ -19,6 +18,7 @@
       position: relative;
 
       a {
+        font-size: 15px;
         margin-left: 10px;
         @media (max-width: 815px) {
           font-size: 14px;
@@ -27,8 +27,8 @@
       }
 
       button {
+        font-size: 15px;
         margin-left: 10px;
-        font-size: 16px;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -191,4 +191,11 @@
       }
     }
   }
+}
+
+// coloring of the nav tabs
+.current-tab {
+  position: relative;
+  color: white !important;
+  font-weight: 900;
 }
