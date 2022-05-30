@@ -1,7 +1,7 @@
 //@ts-nocheck
 import { useEffect, useState } from "react";
 import { Nav, Navbar as BoostrapNavbar, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useWindowSize from "../../hooks/useWindowSize";
 import "./Navbar.scss";
 import { Fade } from "react-awesome-reveal";
@@ -9,6 +9,8 @@ import { Fade } from "react-awesome-reveal";
 import { AiFillCaretDown } from "react-icons/ai";
 
 const Navbar: React.FC = () => {
+  const { pathname } = useLocation();
+
   const [minimized, setMinimized] = useState<boolean>(false);
   const [mobileNav, setMobileNav] = useState<boolean>(false);
 
@@ -37,10 +39,30 @@ const Navbar: React.FC = () => {
               nuccis designs
             </Link>
             <Nav>
-              <Link to="/services">SERVICES</Link>
-              <Link to="/contact">CONTACT</Link>
-              <Link to="/aboutme">ABOUT ME</Link>
-              <Link to="/clients">CUSTOMERS</Link>
+              <Link
+                className={pathname === "/services" ? "current-tab" : null}
+                to="/services"
+              >
+                SERVICES
+              </Link>
+              <Link
+                className={pathname === "/contact" ? "current-tab" : null}
+                to="/contact"
+              >
+                CONTACT
+              </Link>
+              <Link
+                className={pathname === "/aboutme" ? "current-tab" : null}
+                to="/aboutme"
+              >
+                ABOUT ME
+              </Link>
+              <Link
+                className={pathname === "/clients" ? "current-tab" : null}
+                to="/clients"
+              >
+                CUSTOMERS
+              </Link>
               {/* web dropdown container*/}
               <ul className="Navbar-dropdown" onBlur={handleBlur}>
                 <button
@@ -57,34 +79,116 @@ const Navbar: React.FC = () => {
                 {dropdown && (
                   <Container>
                     <Fade>
-                      <Link to="/services/bridal">Bridal</Link>
+                      <Link
+                        className={
+                          pathname === "/services/bridal" ? "current-tab" : null
+                        }
+                        to="/services/bridal"
+                      >
+                        Bridal
+                      </Link>
                     </Fade>
                     <Fade delay={200}>
-                      <Link to="/services/homedecor">Home Decor</Link>
+                      <Link
+                        className={
+                          pathname === "/services/homedecor"
+                            ? "current-tab"
+                            : null
+                        }
+                        to="/services/homedecor"
+                      >
+                        Home Decor
+                      </Link>
                     </Fade>
                     <Fade delay={250}>
-                      <Link to="/services/pets">Pets</Link>
+                      <Link
+                        className={
+                          pathname === "/services/pets" ? "current-tab" : null
+                        }
+                        to="/services/pets"
+                      >
+                        Pets
+                      </Link>
                     </Fade>
                     <Fade delay={300}>
-                      <Link to="/services/clothing">Clothing</Link>
+                      <Link
+                        className={
+                          pathname === "/services/clothing"
+                            ? "current-tab"
+                            : null
+                        }
+                        to="/services/clothing"
+                      >
+                        Clothing
+                      </Link>
                     </Fade>
                     <Fade delay={350}>
-                      <Link to="/services/children">Children</Link>
+                      <Link
+                        className={
+                          pathname === "/services/children"
+                            ? "current-tab"
+                            : null
+                        }
+                        to="/services/children"
+                      >
+                        Children
+                      </Link>
                     </Fade>
                     <Fade delay={400}>
-                      <Link to="/services/festive">Festive</Link>
+                      <Link
+                        className={
+                          pathname === "/services/festive"
+                            ? "current-tab"
+                            : null
+                        }
+                        to="/services/festive"
+                      >
+                        Festive
+                      </Link>
                     </Fade>
                     <Fade delay={450}>
-                      <Link to="/services/teacher">Teacher</Link>
+                      <Link
+                        className={
+                          pathname === "/services/teacher"
+                            ? "current-tab"
+                            : null
+                        }
+                        to="/services/teacher"
+                      >
+                        Teacher
+                      </Link>
                     </Fade>
                     <Fade delay={500}>
-                      <Link to="/services/decals">Decals</Link>
+                      <Link
+                        className={
+                          pathname === "/services/decals" ? "current-tab" : null
+                        }
+                        to="/services/decals"
+                      >
+                        Decals
+                      </Link>
                     </Fade>
                     <Fade delay={550}>
-                      <Link to="/services/invitations">Invitations</Link>
+                      <Link
+                        className={
+                          pathname === "/services/invitations"
+                            ? "current-tab"
+                            : null
+                        }
+                        to="/services/invitations"
+                      >
+                        Invitations
+                      </Link>
                     </Fade>
                     <Fade delay={600}>
-                      <Link to="/services/signs">Signs</Link>
+                      <Link
+                        className={
+                          pathname === "/services/signs" ? "current-tab" : null
+                        }
+                        to="/services/signs"
+                      >
+                        Signs
+                      </Link>
                     </Fade>
                   </Container>
                 )}
