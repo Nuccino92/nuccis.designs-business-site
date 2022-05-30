@@ -72,7 +72,7 @@ const Navbar: React.FC = () => {
                     })
                   }
                 >
-                  PRODUCTS <AiFillCaretDown size={19} />
+                  GALLERY <AiFillCaretDown size={19} />
                 </button>
 
                 {/* web dropdown list*/}
@@ -256,7 +256,7 @@ const Navbar: React.FC = () => {
                       })
                     }
                   >
-                    PRODUCTS <AiFillCaretDown size={19} />
+                    GALLERY <AiFillCaretDown size={19} />
                   </button>
                 </Fade>
                 {dropdown && (
