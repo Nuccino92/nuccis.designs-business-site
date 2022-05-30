@@ -90,44 +90,6 @@
     }
   }
 
-  // background image
-  .HomepageHeader-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    min-width: 50%;
-    min-height: 50%;
-
-    object-fit: cover;
-    z-index: -1;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../../../randooo.png");
-    transform: scale(1);
-
-    filter: blur(8px);
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(8px);
-    -o-filter: blur(8px);
-    -ms-filter: blur(8px);
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: var.$primary-beige;
-      mix-blend-mode: multiply;
-    }
-  }
   .custom-shape-divider-bottom-1653777637 {
     position: absolute;
     bottom: 0;

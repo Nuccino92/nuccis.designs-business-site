@@ -14,7 +14,6 @@ const HomepageHeader = () => {
           <Link to="/services">Services</Link>
         </Fade>
       </Container>
-      <div className="HomepageHeader-background"></div>
       <div className="custom-shape-divider-bottom-1653777637">
         <svg
           data-name="Layer 1"
