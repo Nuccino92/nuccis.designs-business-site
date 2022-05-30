@@ -4,13 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 240px 0;
+  padding: 100px 0 300px 0;
   overflow: hidden;
   position: relative;
   color: black;
+  color: white;
+  background-color: var.$primary-pink;
 
   @media (max-width: 450px) {
-    padding: 120px 0;
+    padding: 60px 0 160px 0;
   }
 
   .container {
@@ -24,7 +26,6 @@
       font-family: var.$Alex-Brush;
       font-size: 180px;
       font-weight: bolder;
-      padding-bottom: 10px;
 
       @media (max-width: 900px) {
         font-size: 117px;
@@ -45,7 +46,7 @@
     }
 
     p {
-      width: 90%;
+      width: 70%;
       font-size: 38px;
       line-height: 33px;
       font-weight: 900;
@@ -73,10 +74,11 @@
       border-radius: 50px;
       background-color: var.$primary-pink;
       color: black;
+      color: white;
       padding: 12px 28px;
       font-size: 24px;
       font-weight: bolder;
-      border: 1px inset black;
+      border: 3px solid white;
       outline: 1px solid var.$primary-pink;
       font-family: var.$Rubik;
       transition: 0.4s ease;
@@ -96,21 +98,22 @@
     bottom: 0;
     right: 0;
 
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 50%;
+    min-height: 50%;
 
     object-fit: cover;
     z-index: -1;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 50%;
+    background-repeat: no-repeat;
     background-position: center;
-    background-image: url("./coverImage.jpg");
-    transform: scale(1.07);
+    background-image: url("../../../randooo.png");
+    transform: scale(1);
 
     filter: blur(8px);
-    -webkit-filter: blur(8px);
+    -webkit-filter: blur(0px);
     -moz-filter: blur(8px);
     -o-filter: blur(8px);
     -ms-filter: blur(8px);
@@ -124,5 +127,28 @@
       background: var.$primary-beige;
       mix-blend-mode: multiply;
     }
+  }
+  .custom-shape-divider-bottom-1653777637 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1653777637 svg {
+    position: relative;
+    display: block;
+    width: calc(255% + 1.3px);
+    height: 220px;
+
+    @media (max-width: 500px) {
+      height: 120px;
+    }
+  }
+
+  .custom-shape-divider-bottom-1653777637 .shape-fill {
+    fill: var.$primary-beige;
   }
 }
