@@ -26,6 +26,8 @@ import p18 from "../images/children/18.jpg";
 import p19 from "../images/children/19.jpg";
 import p20 from "../images/children/20.jpg";
 import p21 from "../images/children/21.jpg";
+import p22 from "../images/children/22.jpg";
+import p23 from "../images/children/23.jpg";
 
 const Childern: React.FC = () => {
   return (
@@ -79,6 +81,7 @@ const Childern: React.FC = () => {
               <img src={p5} alt=""></img>
               <img src={p13} alt=""></img>
               <img src={p19} alt=""></img>
+              <img src={p22} alt=""></img>
             </Col>
             <Col>
               <img src={p7} alt=""></img>
@@ -97,6 +100,7 @@ const Childern: React.FC = () => {
               <img src={p12} alt=""></img>
               <img src={p17} alt=""></img>
               <img src={p21} alt=""></img>
+              <img src={p23} alt=""></img>
             </Col>
           </Row>
         </Container>

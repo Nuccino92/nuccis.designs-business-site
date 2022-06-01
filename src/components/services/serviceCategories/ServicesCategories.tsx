@@ -10,7 +10,6 @@ import invitationCover from "../../images/coverImages/invitation.jpg";
 import petCover from "../../images/coverImages/pet.jpg";
 import seasonalCover from "../../images/coverImages/seasonal.jpg";
 import teacherCover from "../../images/coverImages/teacher.jpg";
-import signCover from "../../images/coverImages/sign.jpg";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -103,14 +102,6 @@ const ServicesCategories = () => {
           <Link to="/services/children">
             <img src={childrenCover} alt="Happy child with custom shirt" />
             <h3>Children</h3>
-            <p>Click to view pictures &#x2192;</p>
-          </Link>
-        </div>
-
-        <div>
-          <Link to="/services/signs">
-            <img src={signCover} alt="A custom sign" />
-            <h3>Signs</h3>
             <p>Click to view pictures &#x2192;</p>
           </Link>
         </div>

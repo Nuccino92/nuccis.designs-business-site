@@ -26,6 +26,19 @@ import p18 from "../images/homeDecor/18.jpg";
 import p19 from "../images/homeDecor/19.jpg";
 import p20 from "../images/homeDecor/20.jpg";
 import p21 from "../images/homeDecor/21.jpg";
+import p22 from "../images/homeDecor/22.jpg";
+import p23 from "../images/homeDecor/23.jpg";
+import p24 from "../images/homeDecor/24.jpg";
+import p25 from "../images/homeDecor/25.jpg";
+import p26 from "../images/homeDecor/26.jpg";
+import p27 from "../images/homeDecor/27.jpg";
+import p28 from "../images/homeDecor/28.jpg";
+import p29 from "../images/homeDecor/29.jpg";
+import p30 from "../images/homeDecor/30.jpg";
+import p31 from "../images/homeDecor/31.jpg";
+import p32 from "../images/homeDecor/32.jpg";
+import p33 from "../images/homeDecor/33.jpg";
+import p34 from "../images/homeDecor/34.jpg";
 
 const HomeDecor: React.FC = () => {
   return (
@@ -79,6 +92,11 @@ const HomeDecor: React.FC = () => {
               <img src={p5} alt=""></img>
               <img src={p13} alt=""></img>
               <img src={p20} alt=""></img>
+              <img src={p21} alt=""></img>
+              <img src={p22} alt=""></img>
+              <img src={p23} alt=""></img>
+              <img src={p24} alt=""></img>
+              <img src={p34} alt=""></img>
             </Col>
             <Col>
               <img src={p7} alt=""></img>
@@ -88,6 +106,11 @@ const HomeDecor: React.FC = () => {
               <img src={p11} alt=""></img>
               <img src={p18} alt=""></img>
               <img src={p19} alt=""></img>
+              <img src={p25} alt=""></img>
+              <img src={p26} alt=""></img>
+              <img src={p27} alt=""></img>
+              <img src={p28} alt=""></img>
+              <img src={p29} alt=""></img>
             </Col>
             <Col>
               <img src={p9} alt=""></img>
@@ -97,6 +120,10 @@ const HomeDecor: React.FC = () => {
               <img src={p12} alt=""></img>
               <img src={p17} alt=""></img>
               <img src={p21} alt=""></img>
+              <img src={p30} alt=""></img>
+              <img src={p31} alt=""></img>
+              <img src={p32} alt=""></img>
+              <img src={p33} alt=""></img>
             </Col>
           </Row>
         </Container>

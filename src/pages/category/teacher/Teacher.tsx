@@ -18,7 +18,8 @@ import p10 from "../images/teacher/10.jpg";
 import p11 from "../images/teacher/11.jpg";
 import p12 from "../images/teacher/12.jpg";
 import p13 from "../images/teacher/13.jpg";
-import p14 from "../images/teacher/13.jpg";
+import p14 from "../images/teacher/14.jpg";
+import p15 from "../images/teacher/15.jpg";
 
 const Teacher: React.FC = () => {
   return (
@@ -59,6 +60,7 @@ const Teacher: React.FC = () => {
               <img src={p6} alt=""></img>
               <img src={p7} alt=""></img>
               <img src={p8} alt=""></img>
+              <img src={p15} alt=""></img>
             </Col>
             <Col>
               <img src={p9} alt=""></img>

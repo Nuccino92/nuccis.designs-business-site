@@ -21,6 +21,12 @@ import p13 from "../images/pets/13.jpg";
 import p14 from "../images/pets/14.jpg";
 import p15 from "../images/pets/15.jpg";
 import p16 from "../images/pets/16.jpg";
+import p17 from "../images/pets/17.jpg";
+import p18 from "../images/pets/18.jpg";
+import p19 from "../images/pets/19.jpg";
+import p20 from "../images/pets/20.jpg";
+import p21 from "../images/pets/21.jpg";
+import p22 from "../images/pets/22.jpg";
 
 const Pets: React.FC = () => {
   return (
@@ -71,6 +77,8 @@ const Pets: React.FC = () => {
               <img src={p1} alt=""></img>
               <img src={p5} alt=""></img>
               <img src={p13} alt=""></img>
+              <img src={p17} alt=""></img>
+              <img src={p18} alt=""></img>
             </Col>
             <Col>
               <img src={p7} alt=""></img>
@@ -78,6 +86,8 @@ const Pets: React.FC = () => {
               <img src={p6} alt=""></img>
               <img src={p10} alt=""></img>
               <img src={p11} alt=""></img>
+              <img src={p19} alt=""></img>
+              <img src={p20} alt=""></img>
             </Col>
             <Col>
               <img src={p9} alt=""></img>
@@ -85,6 +95,8 @@ const Pets: React.FC = () => {
               <img src={p15} alt=""></img>
               <img src={p16} alt=""></img>
               <img src={p12} alt=""></img>
+              <img src={p21} alt=""></img>
+              <img src={p22} alt=""></img>
             </Col>
           </Row>
         </Container>

@@ -31,7 +31,11 @@ import p24 from "../images/bridal/24.jpg";
 import p25 from "../images/bridal/25.jpg";
 import p26 from "../images/bridal/26.jpg";
 import p27 from "../images/bridal/27.jpg";
-import p28 from "../images/bridal/8.jpg";
+import p28 from "../images/bridal/28.jpg";
+import p29 from "../images/bridal/29.jpg";
+import p30 from "../images/bridal/30.jpg";
+import p31 from "../images/bridal/31.jpg";
+import p32 from "../images/bridal/32.jpg";
 
 const Bridal: React.FC = () => {
   return (
@@ -89,6 +93,7 @@ const Bridal: React.FC = () => {
               <img src={p18} alt=""></img>
               <img src={p19} alt=""></img>
               <img src={p20} alt=""></img>
+              <img src={p29} alt=""></img>
             </Col>
             <Col>
               <img src={p11} alt=""></img>
@@ -101,6 +106,8 @@ const Bridal: React.FC = () => {
               <img src={p28} alt=""></img>
               <img src={p21} alt=""></img>
               <img src={p24} alt=""></img>
+              <img src={p30} alt=""></img>
+              <img src={p31} alt=""></img>
             </Col>
             <Col>
               <img src={p26} alt=""></img>
@@ -112,6 +119,7 @@ const Bridal: React.FC = () => {
               <img src={p12} alt=""></img>
               <img src={p17} alt=""></img>
               <img src={p27} alt=""></img>
+              <img src={p32} alt=""></img>
             </Col>
           </Row>
         </Container>
