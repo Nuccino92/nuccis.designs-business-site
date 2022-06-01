@@ -39,14 +39,13 @@
   a {
     button {
       padding: 13px 24px;
-      border: 1px inset black;
-      outline: 1px solid var.$primary-pink;
+      border: 2px solid white;
       color: var.$primary-pink;
       background: var.$primary-pink;
       font-size: 26px;
       cursor: pointer;
       font-weight: bolder;
-      color: black;
+      color: white;
     }
   }
 }
