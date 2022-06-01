@@ -17,7 +17,6 @@ import Clothing from "./pages/category/clothing/Clothing";
 import Invitations from "./pages/category/invitations/Invitations";
 import Bridal from "./pages/category/bridal/Bridal";
 import Childern from "./pages/category/children/Children";
-import Signs from "./pages/category/signs/Signs";
 import Festive from "./pages/category/festive/Festive";
 import Teacher from "./pages/category/teacher/Teacher";
 import Decals from "./pages/category/decals/Decals";
@@ -48,7 +47,6 @@ const App: React.FC = () => {
               <Route path="/services/invitations" element={<Invitations />} />
               <Route path="/services/bridal" element={<Bridal />} />
               <Route path="/services/children" element={<Childern />} />
-              <Route path="/services/signs" element={<Signs />} />
               <Route path="/services/festive" element={<Festive />} />
               <Route path="/services/teacher" element={<Teacher />} />
               <Route path="/services/decals" element={<Decals />} />
