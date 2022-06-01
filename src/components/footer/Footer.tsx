@@ -50,6 +50,7 @@ const Footer: React.FC = () => {
           </Nav.Link>{" "}
         </Container>
       </Nav>
+      <span> © Copyright 2022 - nuccis designs</span>
     </Navbar>
   );
 };
