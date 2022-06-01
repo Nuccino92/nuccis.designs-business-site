@@ -191,16 +191,6 @@ const Navbar: React.FC = () => {
                         Invitations
                       </Link>
                     </Fade>
-                    <Fade delay={600}>
-                      <Link
-                        className={
-                          pathname === "/services/signs" ? "current-tab" : null
-                        }
-                        to="/services/signs"
-                      >
-                        Signs
-                      </Link>
-                    </Fade>
                   </Container>
                 )}
               </ul>
@@ -342,14 +332,6 @@ const Navbar: React.FC = () => {
                         to="/services/invitations"
                       >
                         Invitations
-                      </Link>
-                    </Fade>
-                    <Fade delay={600}>
-                      <Link
-                        onClick={() => setMobileNav(false)}
-                        to="/services/signs"
-                      >
-                        Signs
                       </Link>
                     </Fade>
                   </Container>
