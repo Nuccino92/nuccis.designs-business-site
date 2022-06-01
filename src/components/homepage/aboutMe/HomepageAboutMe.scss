@@ -1,16 +1,27 @@
 @use "../../../scss/variables" as var;
 
 .HomepageAboutMe {
-  width: 82vw;
+  width: 63vw;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 350px;
+  // margin-bottom: 10px;
 
   @media (max-width: 1600px) {
-    width: 100vw;
+    width: 72vw;
   }
 
-  @media (max-width: 400px) {
-    margin-top: 130px;
+  @media (max-width: 950px) {
+    width: 82vw;
+  }
+
+  @media (max-width: 750px) {
+    width: 95vw;
+  }
+
+  @media (max-width: 550px) {
+    margin-top: 170px;
+    margin-bottom: 40px;
+    border: 5px solid var.$primary-pink;
   }
 
   .row {
@@ -24,39 +35,116 @@
         height: 400px;
       }
 
-      @media (max-width: 550px) {
-        height: 250px;
+      @media (max-width: 450px) {
+        height: 500px;
       }
+    }
 
-      @media (max-width: 280px) {
-        height: 175px;
+    .col:nth-child(1) {
+      @media (max-width: 550px) {
+        display: none;
       }
     }
 
     .col:nth-child(2) {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      border-right: 1px solid black;
-      border-top: 1px solid black;
+      padding: 50px 20px;
+      border-top: 8px solid var.$primary-pink;
+
+      @media (max-width: 550px) {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        align-items: center;
+
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: 0;
+          right: 0;
+          top: 0;
+
+          background-image: url(./images/Me.jpg);
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+
+          -webkit-filter: blur(1px);
+          -moz-filter: blur(1px);
+          -o-filter: blur(1px);
+          -ms-filter: blur(1px);
+          filter: blur(1px);
+        }
+      }
 
       a {
         font-size: 35px;
+        font-family: var.$Courgette;
+        margin-bottom: 30px;
+        color: var.$primary-pink;
 
         @media (max-width: 850px) {
           font-size: 25px;
         }
 
         @media (max-width: 550px) {
-          font-size: 17px;
+          font-size: 35px;
+          font-weight: 900;
+          color: var.$primary-pink;
+          text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
 
-        @media (max-width: 280px) {
-          font-size: 14px;
+        @media (max-width: 310px) {
+          font-size: 25px;
         }
 
         &:hover {
           text-decoration: underline;
+        }
+      }
+
+      p {
+        width: 80%;
+        font-size: 21px;
+
+        @media (max-width: 850px) {
+          font-size: 18px;
+        }
+
+        @media (max-width: 550px) {
+          width: 100%;
+          background-color: rgba(255, 255, 255, 0.069);
+          padding: 20px;
+          border-radius: 10px;
+          color: var.$primary-pink;
+          font-weight: 900;
+        }
+      }
+
+      button {
+        border: 2px solid var.$primary-pink;
+        width: max-content;
+        margin-top: 30px;
+        padding: 6px 15px;
+        transition: 0.4s ease;
+
+        &:hover {
+          transform: scale(1.07);
+        }
+
+        a {
+          font-family: inherit;
+          color: var.$primary-pink;
+          font-size: 24px;
+          font-weight: 900;
+
+          &:hover {
+            text-decoration: none;
+            transform: scale(1.03);
+          }
         }
       }
     }
@@ -66,6 +154,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-top: 8px solid var.$primary-pink;
+    border-left: 8px solid var.$primary-pink;
 
     &:nth-child(1) {
       object-position: left top;
