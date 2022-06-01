@@ -8,18 +8,42 @@
     padding: 50px 0 0 0;
   }
 
-  h2 {
-    font-size: 40px;
-    padding: 0 0 40px 70px;
+  // container for category title
+  .HomepageCategories-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var.$primary-pink;
+    padding: 10px 0;
 
-    @media (max-width: 700px) {
-      text-align: center;
-      font-size: 33px;
-      padding: 0 10px 40px 10px;
+    img {
+      height: 90px;
+      width: auto;
+      border: 5px solid white;
+      margin: 0 60px;
+      transform: rotate(10deg);
+
+      &:nth-child(1) {
+        transform: rotate(-10deg);
+      }
+
+      @media (max-width: 900px) {
+        display: none;
+      }
     }
 
-    @media (max-width: 500px) {
-      font-size: 25px;
+    h2 {
+      font-size: 60px;
+      font-family: var.$Courgette;
+      text-align: center;
+
+      @media (max-width: 1100px) {
+        font-size: 40px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 25px;
+      }
     }
   }
 
@@ -112,30 +136,37 @@
       padding: 110px 20px;
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 750px) {
       padding: 60px 20px;
     }
 
     h4 {
       font-size: 40px;
       margin-bottom: 20px;
+      font-family: var.$Courgette;
 
       @media (max-width: 650px) {
-        font-size: 22px;
+        font-size: 32px;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 26px;
       }
     }
 
     button {
       font-size: 26px;
-      font-weight: bolder;
-      border: 1px inset black;
-      outline: 1px solid var.$primary-pink;
-      color: var.$primary-pink;
+
+      border: 2px solid white;
       background-color: var.$primary-pink;
       padding: 10px 25px;
       cursor: pointer;
       border-radius: 2px;
-      color: black;
+
+      a {
+        font-weight: bolder;
+        color: white;
+      }
     }
 
     .container {

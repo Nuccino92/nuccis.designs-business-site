@@ -3,6 +3,10 @@ import "./HomepageCategories.scss";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 
+// header images
+import shirt from "./images/shirt.jpg";
+import packagePicture from "./images/package.jpg";
+
 // category images
 import bridalCover from "../../images/coverImages/bridal.jpg";
 import clothingCover from "../../images/coverImages/clothing.jpg";
@@ -21,7 +25,11 @@ const HomepageCategories = () => {
     <Container className="HomepageCategories">
       {/*  @ts-expect-error: */}
       <Fade triggerOnce duration={2000}>
-        <h2>Check out some popular product categories</h2>
+        <Container className="HomepageCategories-title-container">
+          <img src={shirt} alt="Customized T-shirt"></img>
+          <h2>Check out some popular product categories</h2>
+          <img src={packagePicture} alt="Customized T-shirt"></img>
+        </Container>
         <Row>
           <Col>
             <Link to="/services/homedecor">
