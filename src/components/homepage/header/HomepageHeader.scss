@@ -138,13 +138,13 @@
     background-size: cover;
     background-position: center;
     background-image: url("./coverImage.jpg");
-    transform: scale(1.09);
+    transform: scale(1.03);
 
-    filter: blur(8px);
-    -webkit-filter: blur(3px);
-    -moz-filter: blur(8px);
-    -o-filter: blur(8px);
-    -ms-filter: blur(8px);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
 
     &::after {
       content: "";
