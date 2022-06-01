@@ -2,6 +2,8 @@ import "./HomepageHeader.scss";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
+import slippers from "./images/slippers.jpg";
+import teddyBear from "./images/teddy-bear.jpg";
 
 const HomepageHeader = () => {
   return (
@@ -9,24 +11,18 @@ const HomepageHeader = () => {
       <Container>
         {/*  @ts-expect-error: */}
         <Fade duration={2000} triggerOnce>
-          <h1>nuccis designs</h1>
-          <p>Custom designed products that are made for you. </p>
+          <h1>For all your customized needs! </h1>
           <Link to="/services">Services</Link>
         </Fade>
       </Container>
-      <div className="custom-shape-divider-bottom-1653777637">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            className="shape-fill"
-          ></path>
-        </svg>
-      </div>
+      <Container className="HomepageHeader-image-container">
+        <img
+          src={teddyBear}
+          alt="Customized teddy bear for a newborn child"
+        ></img>
+        <img src={slippers} alt="Customized slippers"></img>
+      </Container>
+      <div className="HomepageHeader-background"></div>
     </Container>
   );
 };
