@@ -82,16 +82,6 @@ const HomepageCategories = () => {
               </Container>
             </Link>
           </Col>
-
-          <Col>
-            <Link to="/services/signs">
-              <img src={signCover} alt="Custom t-shirts"></img>
-              <Container>
-                <h4 aria-label="Signs">Signs</h4>
-                <button>View More</button>
-              </Container>
-            </Link>
-          </Col>
         </Row>
 
         <Container className="view-more-categories">

@@ -49,20 +49,28 @@
 
   .row {
     display: flex;
+    // margin: 0 20px;
     @media (max-width: 700px) {
       flex-direction: column;
     }
 
     .col {
       position: relative;
+      border-radius: 12px;
       width: 100vw;
-      height: 530px;
-      border: 3px solid var.$primary-beige;
+      height: 420px;
+      border: 5px solid var.$primary-beige;
+      overflow: hidden;
 
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        transition: 0.8s ease;
+
+        &:hover {
+          transform: scale(1.12);
+        }
       }
 
       .container {
@@ -156,7 +164,6 @@
 
     button {
       font-size: 26px;
-
       border: 2px solid white;
       background-color: var.$primary-pink;
       padding: 10px 25px;
