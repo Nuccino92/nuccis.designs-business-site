@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Nav, Navbar as BoostrapNavbar, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import useWindowSize from "../../hooks/useWindowSize";
@@ -10,6 +10,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 
 const Navbar: React.FC = () => {
   const { pathname } = useLocation();
+  const navRef = useRef(null);
 
   const [minimized, setMinimized] = useState<boolean>(false);
   const [mobileNav, setMobileNav] = useState<boolean>(false);
@@ -25,15 +26,22 @@ const Navbar: React.FC = () => {
   let windowSize = useWindowSize();
 
   useEffect(() => {
-    windowSize.width < 750 && setMinimized(true);
-    windowSize.width > 750 && setMinimized(false);
+    windowSize.width < 1050 && setMinimized(true);
+    windowSize.width > 1050 && setMinimized(false);
   }, [windowSize]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const nav = navRef.current;
+      nav.classList.toggle("sticky", window.scrollY > 0);
+    });
+  }, []);
 
   return (
     <>
       {!minimized ? (
         // web nav
-        <BoostrapNavbar className="Navbar">
+        <BoostrapNavbar ref={navRef} className="Navbar">
           <Container>
             <Link to="/" className="Navbar-Logo">
               nuccis designs
@@ -45,25 +53,28 @@ const Navbar: React.FC = () => {
               >
                 SERVICES
               </Link>
+              &#160; |
               <Link
                 className={pathname === "/contact" ? "current-tab" : null}
                 to="/contact"
               >
                 CONTACT
               </Link>
+              &#160; |
               <Link
                 className={pathname === "/aboutme" ? "current-tab" : null}
                 to="/aboutme"
               >
                 ABOUT ME
               </Link>
+              &#160; |
               <Link
                 className={pathname === "/clients" ? "current-tab" : null}
                 to="/clients"
               >
                 CUSTOMERS
               </Link>
-              {/* web dropdown container*/}
+              &#160; |{/* web dropdown container*/}
               <ul className="Navbar-dropdown" onBlur={handleBlur}>
                 <button
                   onClick={() =>
@@ -198,7 +209,7 @@ const Navbar: React.FC = () => {
         </BoostrapNavbar>
       ) : (
         // hamburger nav
-        <BoostrapNavbar className="Navbar Navbar-minimized">
+        <BoostrapNavbar ref={navRef} className="Navbar Navbar-minimized">
           <Container>
             <Link
               onClick={() => setMobileNav(false)}

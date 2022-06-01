@@ -1,11 +1,19 @@
 @use "../../scss/variables" as var;
 
 .Navbar {
-  padding: 5px 40px;
+  padding: 15px 210px;
   position: sticky;
   top: 0;
   background: var.$primary-pink;
   z-index: 1000;
+
+  @media (max-width: 1300px) {
+    padding: 15px 60px;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 15px 20px !important;
+  }
 
   .container {
     display: flex;
@@ -82,13 +90,18 @@
     }
   }
 
+  // nuccis designs logo
   .Navbar-Logo {
     font-family: var.$Alex-Brush;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 75px;
+
+    @media (max-width: 550px) {
+      font-size: 50px;
+    }
 
     @media (max-width: 350px) {
-      font-size: 28px;
+      font-size: 38px !important;
     }
   }
 }
@@ -199,4 +212,17 @@
   position: relative;
   color: white !important;
   transition: 0.5s ease !important;
+}
+
+.sticky {
+  padding: 5px 210px;
+  transition: 0.6s ease;
+
+  @media (max-width: 1300px) {
+    padding: 15px 60px;
+  }
+
+  .Navbar-Logo {
+    font-size: 45px;
+  }
 }
