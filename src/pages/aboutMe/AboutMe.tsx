@@ -26,14 +26,15 @@ const AboutMe: React.FC = () => {
             <h1>A Little About Me</h1>
             <p>
               Hello, my name is Emily Nucci. I'm currently an Early Childhood
-              Educator and Site Director at Montessori. I'm also a huge animal
-              lover who has two adorable dogs Casey and Max. Back in 2020 I
-              decided to start nuccis designs when the pandemic hit, and it has
-              allowed me to connect and work with numerous people in order to
-              design a wide variety of fantastic and beautiful things. A year
-              later I started a family with my fiance and the two adorable dogs
-              when we moved in to our very first home. As time rolls on I hope
-              to be able to keep connecting and making products for you!
+              Educator, Site Director and teacher at Montessori school. I'm also
+              a huge animal lover who has two adorable dogs Casey and Max. Back
+              in 2020 I decided to start nuccis designs when the pandemic hit,
+              and it has allowed me to connect and work with numerous people in
+              order to design a wide variety of fantastic and beautiful things.
+              A year later I started a family with my fiance and the two
+              adorable dogs when we moved in to our very first home. As time
+              rolls on I hope to be able to keep connecting and making products
+              for you!
             </p>
           </Col>
         </Row>
