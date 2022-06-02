@@ -10,6 +10,8 @@ import p3 from "../images/invitations/3.jpg";
 import p4 from "../images/invitations/4.jpg";
 import p5 from "../images/invitations/5.jpg";
 import p6 from "../images/invitations/6.jpg";
+import p7 from "../images/invitations/7.jpg";
+import p8 from "../images/invitations/8.jpg";
 
 const Invitations: React.FC = () => {
   return (
@@ -39,6 +41,7 @@ const Invitations: React.FC = () => {
             <Col>
               <img src={p6} alt=""></img>
               <img src={p3} alt=""></img>
+              <img src={p7} alt=""></img>
             </Col>
             <Col>
               <img src={p2} alt=""></img>
@@ -47,6 +50,7 @@ const Invitations: React.FC = () => {
             <Col>
               <img src={p1} alt=""></img>
               <img src={p5} alt=""></img>
+              <img src={p8} alt=""></img>
             </Col>
           </Row>
         </Container>

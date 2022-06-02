@@ -36,6 +36,7 @@ import p29 from "../images/bridal/29.jpg";
 import p30 from "../images/bridal/30.jpg";
 import p31 from "../images/bridal/31.jpg";
 import p32 from "../images/bridal/32.jpg";
+import p33 from "../images/bridal/33.jpg";
 
 const Bridal: React.FC = () => {
   return (
@@ -94,6 +95,7 @@ const Bridal: React.FC = () => {
               <img src={p19} alt=""></img>
               <img src={p20} alt=""></img>
               <img src={p29} alt=""></img>
+              <img src={p33} alt=""></img>
             </Col>
             <Col>
               <img src={p11} alt=""></img>
