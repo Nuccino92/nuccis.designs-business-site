@@ -1,6 +1,7 @@
 @use "../../scss/variables" as var;
 
 .AboutMe {
+  background-image: url(../pattern.jpg);
   .row {
     margin: 0 auto;
     padding: 200px 20px;
