@@ -226,22 +226,22 @@ const Navbar: React.FC = () => {
                   HOME
                 </Link>
               </Fade>
-              <Fade direction="left" delay={100}>
+              <Fade direction="left" delay={120}>
                 <Link onClick={() => setMobileNav(false)} to="/services">
                   SERVICES
                 </Link>
               </Fade>
-              <Fade direction="right" delay={400}>
+              <Fade direction="right" delay={240}>
                 <Link onClick={() => setMobileNav(false)} to="/contact">
                   CONTACT
                 </Link>
               </Fade>
-              <Fade direction="left" delay={700}>
+              <Fade direction="left" delay={360}>
                 <Link onClick={() => setMobileNav(false)} to="/aboutme">
                   ABOUT ME
                 </Link>
               </Fade>
-              <Fade direction="right" delay={1000}>
+              <Fade direction="right" delay={480}>
                 <Link onClick={() => setMobileNav(false)} to="/clients">
                   CUSTOMERS
                 </Link>
@@ -249,7 +249,7 @@ const Navbar: React.FC = () => {
 
               {/* mobile nav products dropdown */}
               <ul className="Navbar-mobile-dropdown" onBlur={handleBlur}>
-                <Fade direction="left" delay={1300}>
+                <Fade direction="left" delay={600}>
                   <button
                     onClick={() =>
                       setDropdown((prev) => {
