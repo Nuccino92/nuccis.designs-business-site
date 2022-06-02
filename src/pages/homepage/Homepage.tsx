@@ -1,3 +1,4 @@
+import { Container } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import HomepageAboutMe from "../../components/homepage/aboutMe/HomePageAboutMe";
 import HomepageCategories from "../../components/homepage/categories/HomepageCategories";
@@ -18,10 +19,13 @@ const Homepage: React.FC = () => {
       <header>
         <HomepageHeader />
       </header>
-      <HomepageCategories />
-      <HomepageAboutMe />
-      <HomepageClients />
       <HomepageContact />
+      <HomepageCategories />
+      <Container className="About-Client-container">
+        <div className="heart"></div>
+        <HomepageAboutMe />
+        <HomepageClients />
+      </Container>
     </div>
   );
 };
